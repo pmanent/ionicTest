@@ -13,7 +13,7 @@ export class CitiesService {
     console.log('Hello RestServiceProvider Provider');
   };
   getCities(): Observable<Repository[]>{
-    console.log("getCities https://city-tour.com/.rest/mobile-app-rest/v1?service-name=GET_CITIES");
+    console.log("getRepos https://api.github.com/users/pmanent/repos");
     /*
     this.http.get('https://api.github.com/users/pmanent/repos').subscribe(data => {
       console.log(data);
