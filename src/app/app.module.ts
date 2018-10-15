@@ -9,6 +9,8 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CitiesService } from './prodivers/cities.service';
+
+import { GithubService } from './prodivers/github.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
@@ -16,8 +18,8 @@ import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, 
-            IonicModule.forRoot(), 
+  imports: [BrowserModule,
+            IonicModule.forRoot(),
             HttpClientModule,
             AppRoutingModule,
             FormsModule],
@@ -25,7 +27,8 @@ import { FormsModule } from '@angular/forms';
     StatusBar,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    CitiesService
+    CitiesService,
+    GithubService
   ],
   bootstrap: [AppComponent]
 })

@@ -8,10 +8,12 @@
 
 <ion-content padding>
     <ion-slides >
-        
+
             <ion-slide *ngFor="let repo of repos" (click)="goToDetail(repo)">
               <h1>{{repo.name}}</h1>
+              <h1>{{repo.node_id}}</h1>
+
             </ion-slide>
-        
+
     </ion-slides>
 </ion-content>
